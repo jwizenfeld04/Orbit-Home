@@ -6,6 +6,10 @@ How to cut a release: [RELEASING.md](RELEASING.md).
 
 ## [Unreleased]
 
+### Fixed
+
+- Links to the home-server companion, now published as [Orbit-Helper](https://github.com/jwizenfeld04/Orbit-Helper) (formerly tv-input-helper).
+
 ## [1.0.0] - 2026-10-28
 
 The first public release.

@@ -50,7 +50,7 @@ echo
 echo "== Next"
 echo " - Open Orbit from the TV's app list and go through the setup screens."
 if [ $FIRE = 1 ]; then
-  echo " - Fire TV always opens Amazon's home screen on Home. To send Home to Orbit, run tv-input-helper on a"
+  echo " - Fire TV always opens Amazon's home screen on Home. To send Home to Orbit, run Orbit-Helper on a"
   echo "   home server (it keeps homewatch.sh running on the TV), or see 'Make Home open Orbit' in README.md."
 else
   echo " - Press Home and pick Orbit as the home app ('Always')."
