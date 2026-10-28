@@ -15,7 +15,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * The game line (optional). A home server running the Orbit helper (tv-input-helper) picks the game via
+ * The game line (optional). A home server running the Orbit helper (Orbit-Helper) picks the game via
  * Sports Remote and launches it. With no server set ("Home server" in Settings), there's no game line.
  */
 final class Glance {

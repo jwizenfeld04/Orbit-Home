@@ -17,7 +17,7 @@ Plain Java, no Gradle and no Google Play Services. It builds in Docker.
 
 Orbit works on its own. A small helper on a home server, and Sports Remote, add the parts a TV app isn't allowed to do by itself.
 
-| | Orbit alone | + home server running [tv-input-helper](https://github.com/jwizenfeld04/tv-input-helper) | + [Sports Remote](https://github.com/jwizenfeld04/Sports-Remote) |
+| | Orbit alone | + home server running [Orbit-Helper](https://github.com/jwizenfeld04/Orbit-Helper) | + [Sports Remote](https://github.com/jwizenfeld04/Sports-Remote) |
 |---|:-:|:-:|:-:|
 | Clock, weather, photo themes, custom themes | ✓ | ✓ | ✓ |
 | App shelf, idle mode, now playing, lyrics | ✓ | ✓ | ✓ |
@@ -31,7 +31,7 @@ Orbit works on its own. A small helper on a home server, and Sports Remote, add 
 | **Game line:** tonight's NFL / MLB / NHL / NBA games with live scores | — | — | ✓ |
 | OK on a game opens it in the right app (YouTube TV, ESPN, Peacock…) | — | — | ✓ |
 
-**Why the server?** Fire OS only lets Amazon's own apps switch HDMI inputs or replace the Home button. A computer on your network can do both over ADB, Android's debugging connection, so tv-input-helper does it for Orbit. Any always-on machine works: a mini PC, a NAS that runs Docker, or a Raspberry Pi. Sports Remote runs on the same machine and knows which of your services shows each game.
+**Why the server?** Fire OS only lets Amazon's own apps switch HDMI inputs or replace the Home button. A computer on your network can do both over ADB, Android's debugging connection, so Orbit-Helper does it for Orbit. Any always-on machine works: a mini PC, a NAS that runs Docker, or a Raspberry Pi. Sports Remote runs on the same machine and knows which of your services shows each game.
 
 ### What Orbit can't do
 
@@ -86,7 +86,7 @@ If you skip setup: every TV app is on the shelf (well-known streaming apps first
 
 - **Android TV, Google TV, Nvidia Shield:** press Home and pick Orbit when asked, then "Always". If it doesn't ask, look in Settings → Apps → Default apps → Home app.
 - **Fire TV:** Amazon always opens its own home screen, so something has to send Home to Orbit:
-  - **With a home server (recommended):** run [tv-input-helper](https://github.com/jwizenfeld04/tv-input-helper). It keeps a small watcher script (`homewatch.sh`) running on the TV that opens Orbit about 0.7 s after Home, and restarts it after the TV reboots.
+  - **With a home server (recommended):** run [Orbit-Helper](https://github.com/jwizenfeld04/Orbit-Helper). It keeps a small watcher script (`homewatch.sh`) running on the TV that opens Orbit about 0.7 s after Home, and restarts it after the TV reboots.
   - **Without a server, from a computer:** push and start the same script by hand, after setting `LAUNCHER=home.jw.orbit/.OrbitActivity` at its top. It stops when the TV restarts.
     ```bash
     adb push homewatch.sh /data/local/tmp/ && adb shell chmod 755 /data/local/tmp/homewatch.sh
@@ -96,7 +96,7 @@ If you skip setup: every TV app is on the shelf (well-known streaming apps first
 
 ### 4. Optional: home server and Sports Remote
 
-Install [tv-input-helper](https://github.com/jwizenfeld04/tv-input-helper) on an always-on machine, and [Sports Remote](https://github.com/jwizenfeld04/Sports-Remote) next to it for the game line. Then enter the helper's address (`<server-ip>:8788`) on the Live sports setup screen or in Settings → "Home server (game line)". The helper only answers the TV it's set up for.
+Install [Orbit-Helper](https://github.com/jwizenfeld04/Orbit-Helper) on an always-on machine, and [Sports Remote](https://github.com/jwizenfeld04/Sports-Remote) next to it for the game line. Then enter the helper's address (`<server-ip>:8788`) on the Live sports setup screen or in Settings → "Home server (game line)". The helper only answers the TV it's set up for.
 
 ## Using it
 
