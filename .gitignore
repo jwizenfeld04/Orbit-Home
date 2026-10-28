@@ -1,0 +1,10 @@
+# Signing key + password: never in git. Keep a safe copy: updates need the same key.
+keys/
+# Build output
+app/out/
+app/Orbit.apk
+__pycache__/
+app/*.idsig
+custom-themes/
+# Your TV's address (TV_IP=…), read by deploy.sh, setup-tv.sh and tools/custom_theme.sh
+.env
