@@ -1,0 +1,656 @@
+{
+  "_doc": "Wallpaper themes: each theme is a list of photos. phase = the time of day it's shown (dawn/day/golden/dusk/night); src under assets/wallpapers/; y = vertical crop 0 (top)..1 (bottom) for photos taller than 16:9; caption shown in the corner; credit + license (CC BY / BY-SA need the credit). make_assets.py builds app/assets/wall/<theme>/<id>{.jpg,_blur.jpg,_clock.jpg} (id = src file name) and app/assets/themes.json.",
+  "orbit": {
+    "name": "Orbit",
+    "photos": [
+      {
+        "src": "orbit/dawn-4k.jpg",
+        "phase": "dawn",
+        "caption": "Sunrise from the International Space Station",
+        "credit": "NASA (iss065e018683)",
+        "license": "Public domain"
+      },
+      {
+        "src": "orbit/day-4k.jpg",
+        "phase": "day",
+        "caption": "Earth and the Moon from the ISS",
+        "credit": "NASA (iss059e000462)",
+        "license": "Public domain"
+      },
+      {
+        "src": "orbit/golden-4k.jpg",
+        "phase": "golden",
+        "caption": "Sunset over the clouds, from the ISS",
+        "credit": "NASA (iss068e051172)",
+        "license": "Public domain"
+      },
+      {
+        "src": "orbit/dusk-4k.jpg",
+        "phase": "dusk",
+        "caption": "Earth's horizon after sunset",
+        "credit": "NASA (iss074e0722845)",
+        "license": "Public domain"
+      },
+      {
+        "src": "orbit/night-4k.jpg",
+        "phase": "night",
+        "caption": "Airglow and city lights at night",
+        "credit": "NASA (iss062e103874)",
+        "license": "Public domain"
+      },
+      {
+        "src": "orbit/src/500.jpg",
+        "phase": "dawn",
+        "y": 0.5,
+        "caption": "Christmas Day sunrise over the Pacific from the ISS",
+        "credit": "NASA (iss054e005627)",
+        "license": "Public domain",
+        "url": "https://images.nasa.gov/details/iss054e005627"
+      },
+      {
+        "src": "orbit/src/501.jpg",
+        "phase": "dawn",
+        "y": 0.45,
+        "caption": "Sun bursting over the horizon from the ISS",
+        "credit": "NASA (iss063e058598)",
+        "license": "Public domain",
+        "url": "https://images.nasa.gov/details/iss063e058598"
+      },
+      {
+        "src": "orbit/src/502.jpg",
+        "phase": "dawn",
+        "y": 1.0,
+        "caption": "Sun peeking over Earth's limb",
+        "credit": "NASA (iss028e007274)",
+        "license": "Public domain",
+        "url": "https://images.nasa.gov/details/iss028e007274"
+      },
+      {
+        "src": "orbit/src/503.jpg",
+        "phase": "day",
+        "y": 0.5,
+        "caption": "The Nile Delta and Sinai from the ISS",
+        "credit": "NASA (iss064e052447)",
+        "license": "Public domain",
+        "url": "https://images.nasa.gov/details/iss064e052447"
+      },
+      {
+        "src": "orbit/src/504.jpg",
+        "phase": "day",
+        "y": 1.0,
+        "caption": "The Bahamas from the International Space Station",
+        "credit": "NASA (iss071e449837)",
+        "license": "Public domain",
+        "url": "https://images.nasa.gov/details/iss071e449837"
+      },
+      {
+        "src": "orbit/src/505.jpg",
+        "phase": "day",
+        "y": 1.0,
+        "caption": "Italy and the Mediterranean from the ISS",
+        "credit": "NASA (iss059e099173)",
+        "license": "Public domain",
+        "url": "https://images.nasa.gov/details/iss059e099173"
+      },
+      {
+        "src": "orbit/src/506.jpg",
+        "phase": "day",
+        "y": 0.0,
+        "caption": "Hurricane Milton in the Gulf of Mexico",
+        "credit": "NASA (iss072e029295)",
+        "license": "Public domain",
+        "url": "https://images.nasa.gov/details/iss072e029295"
+      },
+      {
+        "src": "orbit/src/507.jpg",
+        "phase": "day",
+        "y": 0.5,
+        "caption": "Gulf of Carpentaria, Australia, from the ISS",
+        "credit": "NASA (iss071e523514)",
+        "license": "Public domain",
+        "url": "https://images.nasa.gov/details/iss071e523514"
+      },
+      {
+        "src": "orbit/src/508.jpg",
+        "phase": "golden",
+        "y": 0.5,
+        "caption": "Low sun over Pacific clouds off Baja California",
+        "credit": "NASA (iss059e101098)",
+        "license": "Public domain",
+        "url": "https://images.nasa.gov/details/iss059e101098"
+      },
+      {
+        "src": "orbit/src/510.jpg",
+        "phase": "golden",
+        "y": 0.5,
+        "caption": "Long cloud shadows at sunrise over the Bismarck Sea",
+        "credit": "NASA (iss072e742575)",
+        "license": "Public domain",
+        "url": "https://images.nasa.gov/details/iss072e742575"
+      },
+      {
+        "src": "orbit/src/511.jpg",
+        "phase": "golden",
+        "y": 1.0,
+        "caption": "Sunlight on the Strait of Gibraltar",
+        "credit": "NASA (iss062e005579)",
+        "license": "Public domain",
+        "url": "https://images.nasa.gov/details/iss062e005579"
+      },
+      {
+        "src": "orbit/src/512.jpg",
+        "phase": "dusk",
+        "y": 0.6,
+        "caption": "Sunset over the Atlantic near Argentina",
+        "credit": "NASA (iss065e018758)",
+        "license": "Public domain",
+        "url": "https://images.nasa.gov/details/iss065e018758"
+      },
+      {
+        "src": "orbit/src/513.jpg",
+        "phase": "dusk",
+        "y": 0.5,
+        "caption": "Crescent Moon over an orbital sunset",
+        "credit": "NASA (iss068e004256)",
+        "license": "Public domain",
+        "url": "https://images.nasa.gov/details/iss068e004256"
+      },
+      {
+        "src": "orbit/src/514.jpg",
+        "phase": "dusk",
+        "y": 0.5,
+        "caption": "Last rays of an orbital sunset",
+        "credit": "NASA (iss074e0556690)",
+        "license": "Public domain",
+        "url": "https://images.nasa.gov/details/iss074e0556690"
+      },
+      {
+        "src": "orbit/src/515.jpg",
+        "phase": "night",
+        "y": 0.5,
+        "caption": "Aurora over Sweden and Finland at night",
+        "credit": "NASA (iss064e024089)",
+        "license": "Public domain",
+        "url": "https://images.nasa.gov/details/iss064e024089"
+      },
+      {
+        "src": "orbit/src/516.jpg",
+        "phase": "night",
+        "y": 0.5,
+        "caption": "Aurora australis over the Indian Ocean",
+        "credit": "NASA (iss065e214281)",
+        "license": "Public domain",
+        "url": "https://images.nasa.gov/details/iss065e214281"
+      },
+      {
+        "src": "orbit/src/518.jpg",
+        "phase": "night",
+        "y": 1.0,
+        "caption": "The Milky Way above airglow over East Africa",
+        "credit": "NASA (iss073e0982679)",
+        "license": "Public domain",
+        "url": "https://images.nasa.gov/details/iss073e0982679"
+      },
+      {
+        "src": "orbit/src/520.jpg",
+        "phase": "golden",
+        "y": 0.5,
+        "caption": "Low sun and long cloud shadows over Australia's Gulf of Carpentaria",
+        "credit": "NASA (iss069e056653)",
+        "license": "Public domain",
+        "url": "https://images.nasa.gov/details/iss069e056653"
+      },
+      {
+        "src": "orbit/src/521.jpg",
+        "phase": "night",
+        "y": 0.5,
+        "caption": "Aurora australis under the stars, southwest of Perth, from the ISS",
+        "credit": "NASA (iss073e0831259)",
+        "license": "Public domain",
+        "url": "https://images.nasa.gov/details/iss073e0831259"
+      }
+    ]
+  },
+  "parks": {
+    "name": "National Parks",
+    "photos": [
+      {
+        "src": "parks/src/074.jpg",
+        "phase": "dawn",
+        "y": 0.0,
+        "caption": "Grand Teton · Schwabacher Landing",
+        "credit": "Grand Teton NPS",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Schwabachers_Landing_(48975430172).jpg"
+      },
+      {
+        "src": "parks/src/031.jpg",
+        "phase": "day",
+        "y": 0.35,
+        "caption": "Yosemite · Tunnel View",
+        "credit": "EF5",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:%E2%80%9CTunnel_View%E2%80%9D_overlook_showing_famous_rock_formations_in_Yosemite_Valley_05.jpg"
+      },
+      {
+        "src": "parks/src/101.jpg",
+        "phase": "golden",
+        "y": 0.5,
+        "caption": "Grand Canyon · Yaki Point",
+        "credit": "Andreas F. Borchert",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Grand_Canyon_Yaki_Point_Sunset_2006_09_09.jpg"
+      },
+      {
+        "src": "parks/src/223.jpg",
+        "phase": "dusk",
+        "y": 0.0,
+        "caption": "Arches · Delicate Arch",
+        "credit": "Alex Proimos",
+        "license": "CC BY 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Arches_National_Park,_Sunset,_Delicate_Arch_(3458782498).jpg"
+      },
+      {
+        "src": "parks/src/188.jpg",
+        "phase": "night",
+        "y": 0.5,
+        "caption": "Arches · Milky Way over Wall Street",
+        "credit": "Eric Kilby",
+        "license": "CC BY-SA 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Moonrise_and_Milky_Way_Towards_Wall_Street_(53975353588).jpg"
+      },
+      {
+        "src": "parks/src/402.jpg",
+        "phase": "dawn",
+        "y": 0.35,
+        "caption": "Acadia · Cadillac Mountain sunrise",
+        "credit": "John Manard",
+        "license": "CC BY-SA 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Cadillac_Mountain_Sunrise,_Acadia_National_Park_-_51650832659.jpg"
+      },
+      {
+        "src": "parks/src/404.jpg",
+        "phase": "day",
+        "y": 0.45,
+        "caption": "Mount Rainier · Sunrise meadows",
+        "credit": "NPS Photo",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Mount_Rainier_and_Sunrise_(163a05fa-3224-4103-937d-dfb5ca310c0f).JPG"
+      },
+      {
+        "src": "parks/src/405.jpg",
+        "phase": "day",
+        "y": 0.25,
+        "caption": "Zion · The Watchman",
+        "credit": "Jonathan Kriz",
+        "license": "CC BY 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:The_Watchman,_in_Zion.jpg"
+      },
+      {
+        "src": "parks/src/407.jpg",
+        "phase": "day",
+        "y": 0.15,
+        "caption": "Great Sand Dunes · Dune field",
+        "credit": "Andrew Russell",
+        "license": "CC BY 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Dunes_-_Great_Sand_Dunes_National_Park.jpg"
+      },
+      {
+        "src": "parks/src/410.jpg",
+        "phase": "golden",
+        "y": 0.3,
+        "caption": "Yosemite · Half Dome",
+        "credit": "Pierre Le Vaillant",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Yosemite_National_Park%27s_Half_Dome_at_sunset_(Unsplash).jpg"
+      },
+      {
+        "src": "parks/src/411.jpg",
+        "phase": "golden",
+        "y": 0.45,
+        "caption": "Everglades · Sunset reflections",
+        "credit": "Charles Patrick Ewing",
+        "license": "CC BY 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Everglades_Sunset_Reflected.jpg"
+      },
+      {
+        "src": "parks/src/412.jpg",
+        "phase": "dusk",
+        "y": 0.45,
+        "caption": "Crater Lake · Rim at dusk",
+        "credit": "Vulturesong",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Crater_Lake_National_Park_-_HCP_-_October_13,_2022_-_153.jpg"
+      },
+      {
+        "src": "parks/src/413.jpg",
+        "phase": "dusk",
+        "y": 0.35,
+        "caption": "Olympic · Rialto Beach",
+        "credit": "Olympic National Park",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Sunset_rialto_beach_scenic_NPS_Photo_(16691235584).jpg"
+      },
+      {
+        "src": "parks/src/414.jpg",
+        "phase": "dusk",
+        "y": 0.6,
+        "caption": "Badlands · After sunset",
+        "credit": "Eekim",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Badlands_National_Park_-_After_sunset.jpg"
+      },
+      {
+        "src": "parks/src/415.jpg",
+        "phase": "night",
+        "y": 0.5,
+        "caption": "Yellowstone · Old Faithful",
+        "credit": "Yellowstone National Park",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Old_Faithful_and_Milky_Way_crisscross_on_a_clear_summer_night_(35378007120).jpg"
+      },
+      {
+        "src": "parks/src/416.jpg",
+        "phase": "night",
+        "y": 0.5,
+        "caption": "Joshua Tree · Milky Way",
+        "credit": "Henrique Pinto",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Joshua_Tree_National_Park_Night_Sky.jpg"
+      },
+      {
+        "src": "parks/src/417.jpg",
+        "phase": "night",
+        "y": 0.4,
+        "caption": "Glacier · Logan Pass",
+        "credit": "GlacierNPS",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Milky_Way_Reflections_at_Logan_Pass_(19926230414).jpg"
+      },
+      {
+        "src": "parks/src/418.jpg",
+        "phase": "night",
+        "y": 0.45,
+        "caption": "Capitol Reef · Fruita Schoolhouse",
+        "credit": "InDancingLight",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Fruita_Schoolhouse_with_night_sky.jpg"
+      },
+      {
+        "src": "parks/src/420.jpg",
+        "phase": "dawn",
+        "y": 0.25,
+        "caption": "Denali · Wonder Lake alpenglow",
+        "credit": "Mary Lewandowski (NPS)",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Orange_and_pink_light_on_the_Alaska_Range,_a_little_after_4_am._(25e8aed3-9b88-41f7-b56a-93b9350ed706).jpg"
+      },
+      {
+        "src": "parks/src/421.jpg",
+        "phase": "dawn",
+        "y": 0.5,
+        "caption": "Voyageurs · Rainy Lake sunrise",
+        "credit": "jck_photos",
+        "license": "CC BY 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Sunrise,_Rainy_Lake.jpg"
+      },
+      {
+        "src": "parks/src/422.jpg",
+        "phase": "day",
+        "y": 0.5,
+        "caption": "Grand Teton · Jenny Lake",
+        "credit": "Z3lvs",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Jenny_Lake_under_summer_clouds_from_the_hillside_above_its_west_shore,_Grand_Teton_National_Park.jpg"
+      },
+      {
+        "src": "parks/src/423.jpg",
+        "phase": "day",
+        "y": 0.5,
+        "caption": "Rocky Mountain · Bierstadt Lake",
+        "credit": "DimiTalen",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Cloudscape_above_Bierstadt_Lake,_Rocky_Mountain_National_Park,_2009.jpg"
+      },
+      {
+        "src": "parks/src/424.jpg",
+        "phase": "golden",
+        "y": 0.5,
+        "caption": "Shenandoah · Blue Ridge sunset",
+        "credit": "Andrew Parlette",
+        "license": "CC BY 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Shenandoah_National_Park_(30103677214).jpg"
+      },
+      {
+        "src": "parks/src/425.jpg",
+        "phase": "golden",
+        "y": 0.5,
+        "caption": "Yellowstone · Sunset over Yellowstone Lake",
+        "credit": "Yellowstone National Park",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Sunset_over_Avalanche_Peak_and_Stevenson_Island_on_Yellowstone_Lake_(53515669266).jpg"
+      }
+    ]
+  },
+  "ocean": {
+    "name": "Ocean",
+    "photos": [
+      {
+        "src": "ocean/src/110.jpg",
+        "phase": "dawn",
+        "y": 0.5,
+        "caption": "The Pacific, Chile",
+        "credit": "M. Roselund / ESO",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:The_Pacific_at_sunset_(chile-20-cc).jpg"
+      },
+      {
+        "src": "ocean/src/059.jpg",
+        "phase": "day",
+        "y": 0.3,
+        "caption": "Lanikai, Oʻahu",
+        "credit": "Jennifer C.",
+        "license": "CC BY 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Hawaii_(46622278524).jpg"
+      },
+      {
+        "src": "ocean/src/098.jpg",
+        "phase": "golden",
+        "y": 0.5,
+        "caption": "Harris Beach, Oregon",
+        "credit": "Rick Obst",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Pacific_Ocean_sunset_at_Harris_Beach_State_Park.jpg"
+      },
+      {
+        "src": "ocean/src/141.jpg",
+        "phase": "dusk",
+        "y": 0.5,
+        "caption": "Alki Lighthouse, Seattle",
+        "credit": "Joe Mabel",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Alki_Lighthouse_from_south_at_dusk_01.jpg"
+      },
+      {
+        "src": "ocean/src/140.jpg",
+        "phase": "night",
+        "y": 0.5,
+        "caption": "Star trails over La Hague lighthouse, France",
+        "credit": "Antoine Lamielle",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:2017-04_Circumpolar_trails_sunset_at_La_Hague_lighthouse.jpg"
+      },
+      {
+        "src": "ocean/src/300.jpg",
+        "phase": "dawn",
+        "y": 0.55,
+        "caption": "Key West, Florida",
+        "credit": "Robert J. Banach",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Cloud_Formation_Over_The_Horizon.jpg"
+      },
+      {
+        "src": "ocean/src/302.jpg",
+        "phase": "dawn",
+        "y": 0.5,
+        "caption": "Kauaʻi, Hawaiʻi",
+        "credit": "Heath Cajandig",
+        "license": "CC BY 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Sunrise_in_Kauai_(32962014375).jpg"
+      },
+      {
+        "src": "ocean/src/304.jpg",
+        "phase": "day",
+        "y": 0.4,
+        "caption": "Whitehaven Beach, Queensland",
+        "credit": "Hush Neo",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Whitehaven_Beach_-_Northern_End.jpg"
+      },
+      {
+        "src": "ocean/src/306.jpg",
+        "phase": "day",
+        "y": 0.5,
+        "caption": "Reynisfjara, Iceland",
+        "credit": "Diego Delso",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Reynisfjara,_Suðurland,_Islandia,_2014-08-17,_DD_164.JPG"
+      },
+      {
+        "src": "ocean/src/309.jpg",
+        "phase": "golden",
+        "y": 0.4,
+        "caption": "Haystack Rock, Cannon Beach",
+        "credit": "John Manard",
+        "license": "CC BY-SA 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Haystacks_Rocks_and_the_Needles,Cannon_Beach_just_before_sunset.jpg"
+      },
+      {
+        "src": "ocean/src/310.jpg",
+        "phase": "golden",
+        "y": 0.0,
+        "caption": "Godrevy Lighthouse, Cornwall",
+        "credit": "Sykes Cottages",
+        "license": "CC BY 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Godrevy_Lighthouse_at_Dusk_2.jpg"
+      },
+      {
+        "src": "ocean/src/312.jpg",
+        "phase": "dusk",
+        "y": 0.5,
+        "caption": "Peggy's Cove, Nova Scotia",
+        "credit": "Wladyslaw",
+        "license": "CC BY-SA 3.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Peggys_Cove_-_NS_-_Leuchtturm_bei_Sonnenuntergang.jpg"
+      },
+      {
+        "src": "ocean/src/313.jpg",
+        "phase": "dusk",
+        "y": 0.5,
+        "caption": "Akrotiri, Santorini",
+        "credit": "Dietmar Rabich",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Santorin_(GR),_Akrotiri_--_2017_--_2868.jpg"
+      },
+      {
+        "src": "ocean/src/314.jpg",
+        "phase": "dusk",
+        "y": 0.5,
+        "caption": "Mangrove, East Java",
+        "credit": "Rizaldby",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Mangrove,_Lamongan_Regency,_East_Java,_Indonesia_1.jpg"
+      },
+      {
+        "src": "ocean/src/315.jpg",
+        "phase": "night",
+        "y": 0.5,
+        "caption": "Bioluminescence, Norderney",
+        "credit": "Stephan Sprinz",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Meeresleuchten_auf_Norderney_01.jpg"
+      },
+      {
+        "src": "ocean/src/316.jpg",
+        "phase": "night",
+        "y": 0.5,
+        "caption": "Milky Way over the Pacific",
+        "credit": "Paul Stewart",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Milky_Way_over_the_Pacific_Ocean.jpg"
+      },
+      {
+        "src": "ocean/src/317.jpg",
+        "phase": "night",
+        "y": 0.2,
+        "caption": "Tayid Lighthouse, Batanes",
+        "credit": "Bien Orellana Bacarra Jr.",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Tayid_Lighthouse_at_Night.jpg"
+      },
+      {
+        "src": "ocean/src/318.jpg",
+        "phase": "night",
+        "y": 1.0,
+        "caption": "Moonlight, Andaman Sea",
+        "credit": "Vyacheslav Argenberg",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Andaman_Sea_at_night,_Moonset,_Moonlight.jpg"
+      },
+      {
+        "src": "ocean/src/320.jpg",
+        "phase": "dawn",
+        "y": 0.0,
+        "caption": "Pale sunrise over the open sea",
+        "credit": "Colin Maynard (Unsplash)",
+        "license": "CC0",
+        "url": "https://commons.wikimedia.org/wiki/File:Ocean_view_towards_the_pale_yellow_horizon_(Unsplash).jpg"
+      },
+      {
+        "src": "ocean/src/321.jpg",
+        "phase": "day",
+        "y": 0.5,
+        "caption": "Providenciales, Turks and Caicos",
+        "credit": "Caicos Rentals",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:White_sand_beach_and_turquoise_sea,_Providenciales,_Turks_and_Caicos_Islands,_2026_-_06.jpg"
+      },
+      {
+        "src": "ocean/src/322.jpg",
+        "phase": "day",
+        "y": 0.5,
+        "caption": "Turquoise shallows, Turks and Caicos",
+        "credit": "Caicos Rentals",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Turquoise_sea_and_cumulus_clouds,_Providenciales,_Turks_and_Caicos_Islands,_2026_-_13.jpg"
+      },
+      {
+        "src": "ocean/src/323.jpg",
+        "phase": "day",
+        "y": 0.5,
+        "caption": "Buddina Beach, Queensland",
+        "credit": "wuppertaler",
+        "license": "CC BY 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:AUS_Kawana_Waters,_Buddina,_Buddina_Beach_013.jpg"
+      },
+      {
+        "src": "ocean/src/324.jpg",
+        "phase": "golden",
+        "y": 0.5,
+        "caption": "Sailing at sunset, Tenerife",
+        "credit": "TimOve",
+        "license": "CC BY 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Sailboat_and_sea_scooter_at_sunset_in_Tenerife.jpg"
+      },
+      {
+        "src": "ocean/src/325.jpg",
+        "phase": "golden",
+        "y": 0.5,
+        "caption": "Llanddwyn Island, Anglesey",
+        "credit": "TXGemGem",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Sunset_over_the_Sea_from_Llanddwyn_Island,_Anglesey_%E2%80%93_July_2025.jpg"
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  build:
+    name: Build APK
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Build (throwaway signing key; real releases are signed locally)
+        run: |
+          mkdir -p "$RUNNER_TEMP/sdk" "$RUNNER_TEMP/keys"
+          docker run --rm -e HOST_UID="$(id -u)" -v "$PWD/app:/app" -v "$RUNNER_TEMP/sdk:/sdk" -v "$RUNNER_TEMP/keys:/keys" \
+            eclipse-temurin:17-jdk bash /app/build.sh
+          test -s app/Orbit.apk
+      - name: Version matches the changelog
+        run: |
+          v=$(grep -o 'android:versionName="[^"]*"' app/AndroidManifest.xml | cut -d'"' -f2)
+          grep -q "^## \[$v\]" CHANGELOG.md || { echo "CHANGELOG.md has no section for $v"; exit 1; }
+
+  tools:
+    name: Python tools and shell scripts
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Python compiles; themes.json is valid
+        run: |
+          python3 -m py_compile tools/*.py
+          python3 -c "import json; json.load(open('tools/themes.json')); json.load(open('app/assets/themes.json'))"
+      - name: shellcheck
+        run: docker run --rm -v "$PWD:/mnt" -w /mnt koalaman/shellcheck:v0.11.0@sha256:bb596a0d169b85ddd81d8b6d3a2ff6d5baf5fca10b97f575ebc647c3dff62b3d -x -S warning deploy.sh setup-tv.sh app/build.sh tools/*.sh scripts/*.sh
