@@ -38,7 +38,7 @@ Orbit works on its own. A small helper on a home server, and Sports Remote, add 
 - **It isn't in an app store.** You install it from a computer with ADB (below), and updates go the same way.
 - **Fire TV still owns the Home button.** Even with the helper, Amazon's home screen flashes for a moment before Orbit comes back. Amazon's own rows, Live TV guide and profiles stay in Amazon's home, which you can still open.
 - **Score alerts are NFL only**, from ESPN's public scoreboard. Banners don't show while the screen is off.
-- **Now playing only sees music played on the TV.** It works with any app that reports what's playing to Android (Spotify, Amazon Music, Alexa, YouTube Music, Plex…). Music sent from your phone over Bluetooth straight to a soundbar can't be shown.
+- **Now playing only sees music played on the TV.** It works with any app that reports what's playing to Android (Spotify, Amazon Music, Alexa, YouTube Music, Plex…). Music playing on another device, like your phone, can't be shown.
 - **Lyrics come from LRCLIB**, a free community database. Songs it doesn't have show no lyrics.
 - **Settings are per TV.** Each TV keeps its own, and there's no sync.
 - **HDMI switching on Android TV / Google TV** uses the standard Android API and hasn't been tested on a real TV yet.
